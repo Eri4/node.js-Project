@@ -7,6 +7,9 @@
     "start": "node src/app.js",
     "startNM": "nodemon src/app.js -e js,hbs"
   },
+  "engines":{
+   "node":"^10.15.3" 
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
