@@ -8,6 +8,7 @@ node {
    stage('test') {
      nodejs(nodeJSInstallationName: 'nodejs') {
        sh 'npm install'
+       sh 'npm audit fix' 
      }
    }
    stage('docker build/push') {
