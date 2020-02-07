@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "startNM": "nodemon src/app.js -e js,hbs"
+    "startNM": "nodemon src/app.js -e js,hbs",
+    "test":"mocha"
   },
   "engines":{
    "node":"^10.15.3" 
