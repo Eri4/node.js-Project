@@ -12,7 +12,7 @@ node {
      }
    }
    stage('docker build/push') {
-     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
+     docker.withRegistry('https://index.docker.io', 'dockerhub') {
        def app = docker.build("patatjaeri/nodejs_test_app:${commit_id}", '.').push()
      }
    }
